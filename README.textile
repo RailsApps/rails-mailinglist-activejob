@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Mailing List Active Job)! Rails Mailing List Active Job
 
-Rails 4.1 example application using "Active Job":https://github.com/rails/rails/tree/master/activejob for background processing. The application lets a visitor join a MailChimp-hosted mailing list.
+Rails 4.2 example application using "Active Job":https://github.com/rails/rails/tree/master/activejob for background processing. The application lets a visitor join a MailChimp-hosted mailing list.
 
 Use this example application as a starter app for your own web applications. For a complete explanation of the code, see the tutorial:
 
@@ -96,7 +96,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.1 must be installed in your development environment. Run the command:
+To build the example application, Rails 4.2 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-mailinglist-activejob -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
