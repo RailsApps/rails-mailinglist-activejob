@@ -1,4 +1,4 @@
-h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Mailing List Active Job)! Rails Mailing List Active Job
+h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Mailing List Active Job)! Rails Mailing List with Active Job
 
 Rails 4.2 example application using "Active Job":https://github.com/rails/rails/tree/master/activejob for background processing. The application lets a visitor join a MailChimp-hosted mailing list.
 
