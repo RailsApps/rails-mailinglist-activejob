@@ -1,6 +1,6 @@
 h1. !http://railsapps.github.io/images/rails-36x36.jpg(Rails Mailing List Active Job)! Rails Mailing List with Active Job
 
-Rails 4.2 example application using "Active Job":https://github.com/rails/rails/tree/master/activejob for background processing. The application lets a visitor join a MailChimp-hosted mailing list.
+Rails 5.0 example application using "Active Job":https://github.com/rails/rails/tree/master/activejob for background processing. The application lets a visitor join a MailChimp-hosted mailing list.
 
 Use this example application as a starter app for your own web applications. For a complete explanation of the code, see the tutorial:
 
@@ -69,10 +69,10 @@ h2. Dependencies
 
 Before generating your application, you will need:
 
-* The Ruby language - version 2.2
-* The Rails gem - version 4.2
+* The Ruby language - version 2.3.1
+* The Rails gem - version 5.0
 
-See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment. See the article "Updating to Rails 4.2":http://railsapps.github.io/updating-rails.html if you are now using Rails 4.1. You must install Rails 4.2 to use this application because Active Job is not available in earlier versions of Rails.
+See the article "Installing Rails":http://railsapps.github.io/installing-rails.html for instructions about setting up Rails and your development environment. See the article "Updating to Rails 5.0":http://railsapps.github.io/updating-rails.html if you are using an earlier version of Rails.
 
 h2. Getting the Application
 
@@ -98,7 +98,7 @@ h4. Generate
 
 If you want to use the project as a starter application, use the "Rails Composer":http://railsapps.github.io/rails-composer/ tool to generate a new version of the example app. You'll be able to give it your own project name when you generate the app. Generating the application gives you additional options.
 
-To build the example application, Rails 4.2 must be installed in your development environment. Run the command:
+To build the example application, Rails 5.0 must be installed in your development environment. Run the command:
 
 <pre>
 $ rails new rails-mailinglist-activejob -m https://raw.github.com/RailsApps/rails-composer/master/composer.rb
@@ -252,7 +252,6 @@ Here are the gems used by the application:
 These gems make development easier:
 
 * "better_errors":https://github.com/charliesome/better_errors - helps when things go wrong
-* "quiet_assets":https://github.com/evrone/quiet_assets - suppresses distracting messages in the log
 * "rails_layout":https://github.com/RailsApps/rails_layout - generates files for an application layout
 
 Your choice of front-end framework:
@@ -340,17 +339,15 @@ The *db/seeds.rb* file is not needed in this application.
 
 h3. Set the Database
 
-If you've used the Rails Composer tool to generate the application, the database is already set up with @rake db:migrate@.
+If you've used the Rails Composer tool to generate the application, the database is already set up with @rails db:migrate@.
 
 If you've cloned the repo, prepare the database and add the default user to the database by running the command:
 
 <pre>
-$ rake db:migrate
+$ rails db:migrate
 </pre>
 
-Use @rake db:reset@ if you want to empty and reseed the database.
-
-If you’re not using "rvm":https://rvm.io/, the Ruby Version Manager, you should preface each rake command with @bundle exec@. You don’t need to use @bundle exec@ if you are using rvm version 1.11.0 or newer.
+Use @rails db:reset@ if you want to empty and reseed the database.
 
 h3. Change your Application's Secret Token
 
@@ -361,7 +358,7 @@ However, if you've cloned the application directly from GitHub, it is crucial th
 Get a unique secret token:
 
 <pre>
-rake secret
+rails secret
 </pre>
 
 Edit the *config/secrets.yml* file to change the secret token.
@@ -449,7 +446,7 @@ h2. MIT License
 
 "MIT License":http://www.opensource.org/licenses/mit-license
 
-Copyright ©2014-15 Daniel Kehoe
+Copyright ©2014-16 Daniel Kehoe
 
 h2. Useful Links
 
